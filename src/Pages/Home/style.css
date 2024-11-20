@@ -1,0 +1,141 @@
+.banner-item-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top-label {
+  @media (max-width: "767px") {
+    display: none;
+  }
+}
+.cardHover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cardHover:hover {
+  transition: transform 1s;
+
+  transform: scale(1.05);
+  transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.credit-score-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f9faff;
+  border-radius: 8px;
+  margin: 20px;
+  gap: 20px;
+}
+
+.banner-left img {
+  max-width: 200px;
+  height: auto;
+}
+
+.banner-right {
+  flex: 1;
+}
+
+.banner-right h2 {
+  font-size: 24px;
+  color: #003a80;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.banner-right .price-strike {
+  text-decoration: line-through;
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.banner-right .free {
+  color: #e91e63; /* Pink color */
+  font-weight: bold;
+}
+
+.banner-right p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #003a80; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #005bb5;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .credit-score-banner {
+    flex-direction: row; /* Keep image and text side by side */
+    align-items: flex-start;
+    text-align: left;
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .banner-left img {
+    max-width: 80px; /* Smaller image size for mobile */
+    height: auto;
+    margin-right: 16px;
+  }
+
+  .banner-right h2 {
+    font-size: 12px; /* Smaller text size for mobile */
+    line-height: 1.2;
+  }
+  .banner-right span {
+    font-size: 12px; /* Smaller text size for mobile */
+    line-height: 1.2;
+  }
+
+  .banner-right .price-strike {
+    font-size: 12px; /* Adjust price text size */
+  }
+
+  .banner-right .free {
+    font-size: 12px; /* Adjust free label size */
+  }
+
+  .banner-right p {
+    font-size: 10px; /* Smaller paragraph text size */
+    margin: 6px 0;
+  }
+
+  .cta-button {
+    padding: 6px 6px;
+    font-size: 10px;
+  }
+  .carousel-caption {
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+  }
+}

@@ -1,0 +1,142 @@
+.card-icon-left {
+  display: none;
+}
+
+.insurance-card {
+  width: 320px;
+  min-height: 170px;
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.discount-label {
+  background: #34a853; 
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+  width: fit-content;
+}
+
+.card-content {
+  display: flex;
+  gap: 12px;
+}
+
+.card-icon {
+  font-size: 50px;
+  width: 48px;
+  height: 48px;
+}
+
+.card-info h3 {
+  font-size: 16px;
+  color: #003a80; 
+  margin: 0;
+}
+
+.card-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 4px 0;
+}
+
+.card-price {
+  font-size: 14px;
+  color: #1a73e8;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.card-price span {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.mobile-button {
+  display: none; 
+  background: #34a853; 
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.mobile-button:hover {
+  background: #2d9a46; /* Slightly darker green on hover */
+}
+
+@media screen and (max-width: 768px) {
+  .card-icon-right {
+    display: none;
+  }
+  .card-icon-left {
+    display: block;
+  }
+  .insurance-card {
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .discount-label {
+    display: none; /* Hide discount label on mobile */
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-icon {
+    font-size: 50px;
+    width: 64px; /* Larger icon on mobile */
+    height: 64px;
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card-info h3 {
+    font-size: 12px; /* Larger title on mobile */
+    color: #003a80;
+    text-align: center;
+  }
+
+  .card-info p,
+  .card-price {
+    display: none; /* Hide description and price on mobile */
+  }
+
+  .mobile-button {
+    display: inline-block; /* Show the button on mobile */
+    padding: 5px 10px;
+    font-size: 8px;
+    margin-top: 5px;
+  }
+}
